@@ -1,7 +1,7 @@
 import { Box, Heading } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-type Props = {
+export type Props = {
   theme?: any;
 };
 
