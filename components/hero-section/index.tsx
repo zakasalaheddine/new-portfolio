@@ -10,7 +10,7 @@ export default function HeroSection() {
   return (
     <HeroContainer justifyContent={["center", "space-between"]}>
       <InfoSection>
-        <StyledHeading as="h1" fontSize={["2rem", "4rem"]}>
+        <StyledHeading as="h1" fontSize={["2rem", "3.5rem"]}>
           Hi, my name is
           <Text as="span" color="primary">
             ZAKA SALAH EDDINE

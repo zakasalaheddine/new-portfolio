@@ -1,16 +1,16 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import { Props } from "components/styled-components";
+import { Props, SecondaryText, Title } from "components/styled-components";
 import { Employement } from "../data/employement";
 
 type SingleEmployementProps = { data: Employement };
 export default function SingleEmployement({ data }: SingleEmployementProps) {
   return (
     <EmployementContainer>
-      <Position>{data.position}</Position>
+      <Title>{data.position}</Title>
       <Box d="flex" justifyContent="space-between" w="50%">
-        <SecondaryInformation>{data.company}</SecondaryInformation>
-        <SecondaryInformation>{data.timelaps}</SecondaryInformation>
+        <SecondaryText>{data.company}</SecondaryText>
+        <SecondaryText>{data.timelaps}</SecondaryText>
       </Box>
       <Box>
         <ul>
@@ -19,7 +19,7 @@ export default function SingleEmployement({ data }: SingleEmployementProps) {
           ))}
         </ul>
       </Box>
-      <SecondaryInformation>Technologies: {data.tech}</SecondaryInformation>
+      <SecondaryText>Technologies: {data.tech}</SecondaryText>
     </EmployementContainer>
   );
 }
@@ -45,14 +45,6 @@ const EmployementContainer = styled(Box)`
     bottom: 0;
     border-left: 1px dashed ${(props: Props) => props.theme.colors.primary};
   }
-`;
-
-const Position = styled(Heading)``;
-
-const SecondaryInformation = styled(Text)`
-  font-weight: normal;
-  color: ${(props: Props) => props.theme.colors.primary};
-  padding: 1rem 0;
 `;
 
 const WorkTask = styled.li`

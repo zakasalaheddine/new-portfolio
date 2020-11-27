@@ -1,4 +1,4 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 export type Props = {
@@ -42,4 +42,12 @@ export const Container = styled(Box)`
   display: flex;
   padding: 5rem;
   align-items: center;
+`;
+
+export const Title = styled(Heading)``;
+
+export const SecondaryText = styled(Text)`
+  font-weight: normal;
+  color: ${(props: Props) => props.theme.colors.primary};
+  padding: 1rem 0;
 `;
