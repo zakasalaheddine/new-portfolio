@@ -1,6 +1,6 @@
 import { Box, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 import SingleEmployement from "./single-employement";
-import { EmployementData } from "./data/employement";
+import { EmployementData } from "../data/employement";
 
 export default function EmployementSection() {
   return (

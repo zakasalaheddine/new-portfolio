@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Container } from "components/styled-components";
-import EmployementSection from "./employement-section";
+import EmployementSection from "./employement/employement-section";
 
 export default function AboutSection() {
   return (

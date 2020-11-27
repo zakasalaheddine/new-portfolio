@@ -1,7 +1,7 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { Props } from "components/styled-components";
-import { Employement } from "./data/employement";
+import { Employement } from "../data/employement";
 
 type SingleEmployementProps = { data: Employement };
 export default function SingleEmployement({ data }: SingleEmployementProps) {
