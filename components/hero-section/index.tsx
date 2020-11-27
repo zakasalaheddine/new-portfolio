@@ -1,10 +1,14 @@
 import { Box, Button, Image, Text } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import { SharedTagStyles, StyledHeading } from "../styled-components";
+import {
+  Container,
+  SharedTagStyles,
+  StyledHeading,
+} from "../styled-components";
 
 export default function HeroSection() {
   return (
-    <Container justifyContent={["center", "space-between"]}>
+    <HeroContainer justifyContent={["center", "space-between"]}>
       <InfoSection>
         <StyledHeading as="h1" fontSize={["2rem", "4rem"]}>
           Hi, my name is
@@ -25,7 +29,7 @@ export default function HeroSection() {
         </Box>
       </InfoSection>
       <Image src="/images/design.svg" height="90vh" width="auto" />
-    </Container>
+    </HeroContainer>
   );
 }
 
@@ -34,24 +38,22 @@ const InfoSection = styled(Box)`
   flex-direction: column;
   justify-content: space-around;
   height: 70%;
-`;
-
-const Container = styled(Box)`
-  height: 100vh;
-  display: flex;
-  padding: 5rem;
-  align-items: center;
-  &::before,
-  &::after {
+  position: relative;
+  &::after,
+  &::before {
     ${SharedTagStyles}
-    left: .5rem;
+    left: -2rem;
   }
   &::before {
-    top: 5rem;
+    top: -3.5rem;
     content: "<hero-section>";
   }
   &::after {
-    bottom: 5rem;
+    bottom: -3.5rem;
     content: "</hero-section>";
   }
+`;
+
+const HeroContainer = styled(Container)`
+  height: 100vh;
 `;

@@ -1,4 +1,4 @@
-import { Heading } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 type Props = {
@@ -36,4 +36,10 @@ export const StyledHeading = styled(Heading)`
     bottom: 0;
     content: "</h1>";
   }
+`;
+
+export const Container = styled(Box)`
+  display: flex;
+  padding: 5rem;
+  align-items: center;
 `;
