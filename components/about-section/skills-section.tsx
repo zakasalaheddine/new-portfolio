@@ -1,4 +1,5 @@
-import { Box, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Fragment } from "react";
+import { Box, Grid, GridItem, Heading } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { Props, SecondaryText, Title } from "components/styled-components";
 import { Skills } from "./data/skills";
@@ -11,11 +12,11 @@ export default function SkillsSection() {
       </GridItem>
       <GridItem colSpan={2}>
         <SkillsContainer>
-          {Object.keys(Skills).map((skillName) => (
-            <>
+          {Object.keys(Skills).map((skillName, idx) => (
+            <Fragment key={idx}>
               <Title textTransform="capitalize">{skillName}</Title>
               <SecondaryText>{Skills[skillName]}</SecondaryText>
-            </>
+            </Fragment>
           ))}
         </SkillsContainer>
       </GridItem>
