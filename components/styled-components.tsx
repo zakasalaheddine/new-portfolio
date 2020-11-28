@@ -51,3 +51,7 @@ export const SecondaryText = styled(Text)`
   color: ${(props: Props) => props.theme.colors.primary};
   padding: 1rem 0;
 `;
+
+export const Hide = styled(Box)`
+  overflow: hidden;
+`;
