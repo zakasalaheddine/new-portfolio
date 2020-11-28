@@ -1,15 +1,17 @@
-import { Box, Grid, GridItem, Image, Text } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Image } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import { Props, Title } from "components/styled-components";
-import Link from "next/link";
-import { GithubIcon } from "styles/icons";
+import { Props } from "components/styled-components";
+import { motion } from "framer-motion";
 import ProjectInfos from "./project-infos";
 
 export default function ProjectsSections() {
   return (
-    <ProjectsContainer>
-      <Grid templateColumns="repeat(3, 1fr)" gap={2}>
-        <Project colSpan={2} rowSpan={2}>
+    <ProjectsContainer m={["1rem auto", "5rem auto", "10rem"]}>
+      <Grid
+        templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(3, 1fr)"]}
+        gap={2}
+      >
+        <Project colSpan={[1, 1, 2]} rowSpan={[1, 1, 2]}>
           <Image src="/images/quizv.png" />
           <ProjectInfos
             projectTitle="QUIZV"
@@ -42,11 +44,9 @@ export default function ProjectsSections() {
   );
 }
 
-const ProjectsContainer = styled(Box)`
-  margin: 10rem;
-`;
+const ProjectsContainer = styled(Box)``;
 
-const Project = styled(GridItem)`
+const Project = styled(motion.custom(GridItem))`
   background-color: ${(props: Props) => props.theme.colors.primary};
   position: relative;
   overflow: hidden;

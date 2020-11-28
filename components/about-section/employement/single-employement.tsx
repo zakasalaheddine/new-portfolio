@@ -7,8 +7,8 @@ type SingleEmployementProps = { data: Employement };
 export default function SingleEmployement({ data }: SingleEmployementProps) {
   return (
     <EmployementContainer>
-      <Title>{data.position}</Title>
-      <Box d="flex" justifyContent="space-between" w="50%">
+      <Title fontSize={["1.5rem", "2.5rem"]}>{data.position}</Title>
+      <Box d="flex" justifyContent="space-between" w={["100%", "100%", "50%"]}>
         <SecondaryText>{data.company}</SecondaryText>
         <SecondaryText>{data.timelaps}</SecondaryText>
       </Box>

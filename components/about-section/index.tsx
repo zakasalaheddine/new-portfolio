@@ -6,7 +6,7 @@ import SkillsSection from "./skills-section";
 
 export default function AboutSection() {
   return (
-    <AboutContainer>
+    <AboutContainer py="5rem" px={["2rem", "5rem"]}>
       <EmployementSection />
       <SkillsSection />
     </AboutContainer>
@@ -14,7 +14,6 @@ export default function AboutSection() {
 }
 
 const AboutContainer = styled(Box)`
-  padding: 5rem;
   position: relative;
   &::after,
   &::before {

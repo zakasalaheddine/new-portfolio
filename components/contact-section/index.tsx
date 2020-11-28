@@ -8,21 +8,25 @@ import {
 
 export default function ContactSection() {
   return (
-    <ContactContainer>
+    <ContactContainer py="5rem" px={["1rem", "2rem", "5rem"]}>
       <Box textAlign="center">
         <SecondaryText fontWeight="100" fontSize="0.9rem">
           I’m looking for new opportinities
         </SecondaryText>
         <Title>GET IN TOUCH!</Title>
-        <Text color="text" fontSize="3rem" fontWeight="100">
+        <Text
+          color="text"
+          fontSize={["1.5rem", "2rem", "3rem"]}
+          fontWeight="100"
+        >
           You got a cool project on mind? Let’s collaborate and create powerful
           ‍brand & website for you.
         </Text>
         <Text
           color="text"
-          fontSize="1.5rem"
+          fontSize={["0.9rem", "1rem", "1.5rem"]}
           fontWeight="100"
-          width="70%"
+          width={["100%", "100%", "70%"]}
           mx="auto"
         >
           If you are looking for a freelancer then you are in the right place,
@@ -49,7 +53,6 @@ export default function ContactSection() {
 }
 
 const ContactContainer = styled(Box)`
-  padding: 5rem;
   position: relative;
   &::after,
   &::before {

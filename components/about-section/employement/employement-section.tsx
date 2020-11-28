@@ -4,7 +4,10 @@ import { EmployementData } from "../data/employement";
 
 export default function EmployementSection() {
   return (
-    <Grid templateColumns="repeat(3, 1fr)" gap={10}>
+    <Grid
+      templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(3, 1fr)"]}
+      gap={10}
+    >
       <GridItem colSpan={1}>
         <Heading fontWeight="normal">Employment</Heading>
       </GridItem>

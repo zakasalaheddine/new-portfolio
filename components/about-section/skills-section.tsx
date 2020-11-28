@@ -6,7 +6,10 @@ import { Skills } from "./data/skills";
 
 export default function SkillsSection() {
   return (
-    <Grid templateColumns="repeat(3, 1fr)" gap={10}>
+    <Grid
+      templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(3, 1fr)"]}
+      gap={10}
+    >
       <GridItem colSpan={1}>
         <Heading fontWeight="normal">Skills</Heading>
       </GridItem>

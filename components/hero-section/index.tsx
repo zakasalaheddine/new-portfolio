@@ -8,8 +8,13 @@ import {
 
 export default function HeroSection() {
   return (
-    <HeroContainer justifyContent={["center", "space-between"]}>
-      <InfoSection>
+    <HeroContainer
+      flexDirection={["column-reverse", "column-reverse", "row"]}
+      justifyContent={["center", "center", "space-between"]}
+      m={["1rem", "2rem", "5rem"]}
+      p={["1rem", "2rem", "5rem"]}
+    >
+      <InfoSection my={["6rem", "5rem", 0]}>
         <StyledHeading as="h1" fontSize={["2rem", "3.5rem"]}>
           Hi, my name is
           <Text as="span" color="primary">
@@ -21,14 +26,19 @@ export default function HeroSection() {
           in building (and occasionally designing) exceptional websites,
           applications, and everything in between.
         </Text>
-        <Box>
+        <Box my="1rem">
           <Button variant="primary">Email me</Button>
-          <Button variant="primary" ml="2rem">
+          <Button variant="primary" ml={[0, "2rem"]}>
             Hire me on UpWork
           </Button>
         </Box>
       </InfoSection>
-      <Image src="/images/design.svg" height="90vh" width="auto" />
+      <Image
+        src="/images/design.svg"
+        height="90vh"
+        width="auto"
+        display={["none", "none", "block"]}
+      />
     </HeroContainer>
   );
 }
@@ -37,6 +47,7 @@ const InfoSection = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 100%;
   height: 70%;
   position: relative;
   &::after,

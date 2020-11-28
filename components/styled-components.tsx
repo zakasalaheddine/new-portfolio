@@ -17,7 +17,6 @@ export const SharedTagStyles = css`
 export const StyledHeading = styled(Heading)`
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  line-height: 105px;
   position: relative;
   span {
     display: block;
@@ -40,7 +39,6 @@ export const StyledHeading = styled(Heading)`
 
 export const Container = styled(Box)`
   display: flex;
-  padding: 5rem;
   align-items: center;
 `;
 
