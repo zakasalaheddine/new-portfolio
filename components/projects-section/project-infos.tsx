@@ -6,7 +6,7 @@ import { ExternalLink, GithubIcon } from "styles/icons";
 
 export default function ProjectInfos({
   projectTitle,
-  projectDescription,
+  projectDescription = null,
   projectStack,
   githubLink,
   appLink,
@@ -14,7 +14,9 @@ export default function ProjectInfos({
   return (
     <ProjectInfo>
       <Title>{projectTitle}</Title>
-      <Text className="description">{projectDescription}</Text>
+      {projectDescription && (
+        <Text className="description">{projectDescription}</Text>
+      )}
       <Text>{projectStack}</Text>
       <ProjectLinks>
         <a href={githubLink} target="_blank">

@@ -10,7 +10,7 @@ export default function ProjectsSections() {
     <ProjectsContainer>
       <Grid templateColumns="repeat(3, 1fr)" gap={2}>
         <Project colSpan={2} rowSpan={2}>
-          <Image src="http://driesvanbroeck.be/wp-content/uploads/2018/04/Scene_07-0-00-02-08-1.jpg" />
+          <Image src="/images/quizv.png" />
           <ProjectInfos
             projectTitle="QUIZV"
             projectDescription="Web application, help create a quizzes to challenge friends to see who know you the best"
@@ -20,21 +20,19 @@ export default function ProjectsSections() {
           />
         </Project>
         <Project colSpan={1}>
-          <Image src="http://driesvanbroeck.be/wp-content/uploads/2018/04/Scene_07-0-00-02-08-1.jpg" />
+          <Image src="/images/player.png" />
           <ProjectInfos
-            projectTitle="QUIZV"
-            projectDescription="Web application, help create a quizzes to challenge friends to see who know you the best"
-            projectStack="NextJS, Strapi, Styled-Components, MySQL, Bootstrap"
+            projectTitle="MUSIC PLAYER"
+            projectStack="React JS, Context API, SASS"
             githubLink="/"
             appLink="/"
           />
         </Project>
         <Project colSpan={1}>
-          <Image src="http://driesvanbroeck.be/wp-content/uploads/2018/04/Scene_07-0-00-02-08-1.jpg" />
+          <Image src="/images/capture.png" />
           <ProjectInfos
-            projectTitle="QUIZV"
-            projectDescription="Web application, help create a quizzes to challenge friends to see who know you the best"
-            projectStack="NextJS, Strapi, Styled-Components, MySQL, Bootstrap"
+            projectTitle="CAPTURE"
+            projectStack="NextJS, React JS, Styled-Components"
             githubLink="/"
             appLink="/"
           />
@@ -52,6 +50,7 @@ const Project = styled(GridItem)`
   background-color: ${(props: Props) => props.theme.colors.primary};
   position: relative;
   overflow: hidden;
+  height: fit-content;
   img {
     width: 100%;
     object-fit: cover;
