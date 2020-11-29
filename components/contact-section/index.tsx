@@ -40,10 +40,21 @@ export default function ContactSection() {
           alignItems="center"
           justifyContent="center"
         >
-          <Button variant="primary" my="1rem">
+          <Button
+            variant="primary"
+            my="1rem"
+            as="a"
+            href="mailto:zakasalaheddine@gmail.com"
+          >
             Email me
           </Button>
-          <Button variant="primary" my="1rem">
+          <Button
+            variant="primary"
+            my="1rem"
+            as="a"
+            href="https://www.upwork.com/freelancers/~015745337bad1f9b6f"
+            target="_blank"
+          >
             Hire me on UpWork
           </Button>
         </Box>

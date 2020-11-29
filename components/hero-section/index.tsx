@@ -11,11 +11,10 @@ export default function HeroSection() {
     <HeroContainer
       flexDirection={["column-reverse", "column-reverse", "row"]}
       justifyContent={["center", "center", "space-between"]}
-      m={["1rem", "2rem", "5rem"]}
       p={["1rem", "2rem", "5rem"]}
     >
       <InfoSection my={["6rem", "5rem", 0]}>
-        <StyledHeading as="h1" fontSize={["2rem", "3.5rem"]}>
+        <StyledHeading as="h1" fontSize="2rem">
           Hi, my name is
           <Text as="span" color="primary">
             ZAKA SALAH EDDINE
@@ -27,8 +26,20 @@ export default function HeroSection() {
           applications, and everything in between.
         </Text>
         <Box my="1rem">
-          <Button variant="primary">Email me</Button>
-          <Button variant="primary" ml={[0, "2rem"]}>
+          <Button
+            variant="primary"
+            as="a"
+            href="mailto:zakasalaheddine@gmail.com"
+          >
+            Email me
+          </Button>
+          <Button
+            variant="primary"
+            ml={[0, "2rem"]}
+            as="a"
+            href="https://www.upwork.com/freelancers/~015745337bad1f9b6f"
+            target="_blank"
+          >
             Hire me on UpWork
           </Button>
         </Box>

@@ -17,8 +17,8 @@ export default function ProjectsSections() {
             projectTitle="QUIZV"
             projectDescription="Web application, help create a quizzes to challenge friends to see who know you the best"
             projectStack="NextJS, Strapi, Styled-Components, MySQL, Bootstrap"
-            githubLink="/"
-            appLink="/"
+            githubLink="https://github.com/zakasalaheddine/QuizV"
+            appLink="https://quizv.com/"
           />
         </Project>
         <Project colSpan={1}>
@@ -26,8 +26,8 @@ export default function ProjectsSections() {
           <ProjectInfos
             projectTitle="MUSIC PLAYER"
             projectStack="React JS, Context API, SASS"
-            githubLink="/"
-            appLink="/"
+            githubLink="https://github.com/zakasalaheddine/music-player"
+            appLink="https://zakasalaheddine.github.io/music-player/"
           />
         </Project>
         <Project colSpan={1}>
@@ -35,8 +35,8 @@ export default function ProjectsSections() {
           <ProjectInfos
             projectTitle="CAPTURE"
             projectStack="NextJS, React JS, Styled-Components"
-            githubLink="/"
-            appLink="/"
+            githubLink="https://github.com/zakasalaheddine/capture"
+            appLink="https://capture-beige.vercel.app/"
           />
         </Project>
       </Grid>
